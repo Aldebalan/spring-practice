@@ -11,4 +11,10 @@ public class HelloController {
 		return "/WEB-INF/views/hello.jsp";
 	}
 	
+	@RequestMapping("/hello2") // 요청매핑
+	public String hello2(String name) {
+		System.out.println(name);
+		return "/WEB-INF/views/hello2.jsp";
+	}
+	
 }
