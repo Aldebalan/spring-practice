@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class MainController {
 	
 	@ResponseBody
-	@RequestMapping({"","/main", "/main/a/b/c/d"}) // 여러개 가능
+	@RequestMapping({"","/main", "/main/a/b/c/d"}) // 멀티매핑 가능
 	public String main() {
 		return "MainController.main()";
 	}
