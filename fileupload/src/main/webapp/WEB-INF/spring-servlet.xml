@@ -13,6 +13,10 @@
 		http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context
 		http://www.springframework.org/schema/context/spring-context.xsd">
+	<mvc:annotation-driven />
+
+	<!-- MVC Resource Mapping -->
+	<mvc:resources mapping="/images/**" location="file:/mysite-uploads/"  />
 
 	<!-- Multupart Resolver -->
 	<bean id="multipartResolver"
